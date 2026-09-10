@@ -84,3 +84,9 @@ describe('getAllGames', () => {
 - Don't mock the database — an in-memory Node SQLite instance is fast and exercises real SQL/joins.
 - Keep fixtures minimal but representative of relationships (game → publisher, game → category).
 - If a schema change breaks tests, regenerate migrations with `npm run db:generate` and update fixtures.
+- Comment only non-obvious test intent or fixture constraints. Do not add comments
+  that restate the assertion or the next line of test code, and update comments
+  when the tested behavior changes.
+- Follow the TypeScript formatting conventions enforced by ESLint: four-space
+  indentation, single quotes, semicolons, and trailing commas in multiline
+  structures.

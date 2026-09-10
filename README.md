@@ -127,6 +127,26 @@ start Astro. When Astro reports its local URL, the app opens it in the browser
 canvas automatically. The menu also provides static build and type-check
 commands for on-demand validation.
 
+## Coding Standards
+
+Repository coding standards are maintained in
+[`.github/instructions/`](.github/instructions/). In particular:
+
+- [UI and component strategy](.github/instructions/ui.instructions.md) defines
+  comment intent, component contracts, and accessibility expectations.
+- [Astro instructions](.github/instructions/astro.instructions.md) defines
+  `Props` documentation and frontend TypeScript conventions.
+- [Drizzle instructions](.github/instructions/drizzle.instructions.md) requires
+  TSDoc/JSDoc for exported data-layer functions, including parameters and
+  return values.
+- [Unit-test](.github/instructions/unit-tests.instructions.md) and
+  [Playwright](.github/instructions/playwright.instructions.md) instructions
+  apply the same comment and formatting conventions to tests.
+
+Comments should explain intent and decisions rather than restating code. Keep
+documentation current, and run ESLint through the `quality-checks` skill before
+submitting changes.
+
 ## License 
 
 This project is licensed under the terms of the MIT open source license. Please refer to the [LICENSE](./LICENSE) for the full terms.
