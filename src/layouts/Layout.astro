@@ -1,12 +1,14 @@
 ---
-import Header from "../components/Header.astro"
-import "../styles/global.css"
+import Header from '../components/Header.astro';
+import '../styles/global.css';
 
+/** Props for the shared document layout. */
 interface Props {
-  title?: string;
+    /** Page title shown in the document head. */
+    title?: string;
 }
 
-const { title = "Tailspin Toys" } = Astro.props;
+const { title = 'Tailspin Toys' } = Astro.props;
 ---
 
 <!doctype html>

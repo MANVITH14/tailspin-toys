@@ -25,6 +25,7 @@ The app's data lives in a local SQLite database accessed through **Drizzle ORM**
 - Mark required columns `.notNull()`; nullable columns (e.g. `starRating`) are left nullable.
 - Foreign keys use `.references(() => other.id)`.
 - Export inferred types (`typeof table.$inferSelect`) and build app-facing types from them — don't redeclare row shapes by hand.
+- Document every exported function with TSDoc/JSDoc, including its parameters, return value, and injectable `db` argument where applicable (see [`coding-standards.instructions.md`](coding-standards.instructions.md)).
 
 ## Migrations Workflow
 
