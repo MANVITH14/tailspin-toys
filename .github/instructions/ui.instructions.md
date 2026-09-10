@@ -18,6 +18,18 @@ Refer to technology-specific instruction files:
 - [`astro.instructions.md`](astro.instructions.md) - Astro pages, layouts, and components
 - [`style.instructions.md`](style.instructions.md) - Tailwind CSS styling patterns
 
+## Comments and Documentation
+
+- Comment intent, not mechanics. Explain why a non-obvious decision exists, what
+  constraint it satisfies, or why an unusual approach is necessary.
+- Do not add comments that paraphrase the code below them. Prefer clear names and
+  structure for self-explanatory code.
+- Keep comments current with the implementation. Update or remove a comment in
+  the same change when the related behavior changes; stale comments are bugs.
+- Document reusable component contracts in the `Props` interface. Each prop
+  should have a concise TSDoc comment describing its purpose, accepted values,
+  and any important default or rendering behavior.
+
 ## Core Principles
 
 ### Testability

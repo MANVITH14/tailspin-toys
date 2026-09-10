@@ -90,3 +90,5 @@ Before finalizing tests, ensure:
 - [ ] Assertions are meaningful and reflect user expectations
 - [ ] Tests follow consistent naming conventions
 - [ ] Code is properly formatted and commented
+- [ ] Comments explain test intent or non-obvious setup rather than restating code
+- [ ] Any comments still describe the current behavior
