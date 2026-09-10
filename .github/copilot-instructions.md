@@ -25,6 +25,7 @@ This is a crowdfunding platform for games with a developer theme. The applicatio
   `db` parameters so the production-versus-test usage remains clear.
 - Document reusable Astro component `Props` interfaces and non-obvious
   properties with concise TSDoc comments.
+- Follow the complete convention in `.github/instructions/coding-standards.instructions.md`.
 
 ### TypeScript Formatting
 
@@ -56,6 +57,7 @@ This is a crowdfunding platform for games with a developer theme. The applicatio
 ### Code formatting requirements
 
 - Use TypeScript with explicit types for function parameters and return values, especially in the data layer (`db/`, `src/lib/`)
+- Use four-space indentation, single-quoted strings, semicolons, type-only imports via `import type`, and one statement per line
 - Frontend code (TypeScript, Astro) must pass ESLint checks (`npm run lint`)
 
 ### Data Layer Patterns (Drizzle + Node SQLite)

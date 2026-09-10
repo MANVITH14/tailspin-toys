@@ -135,4 +135,5 @@ There is no Svelte/React layer. When a page genuinely needs client behaviour, ad
 - Keep data fetching in frontmatter (build time); avoid client-side fetching
 - Minimize client-side JavaScript — the default is zero JS shipped
 - Import and use global CSS styles from layouts
-- Always include a `data-testid` on interactive elements (see `ui.instructions.md`)
+- Always include a `data-testid` on interactive elements (see `ui.instructions.md`).
+- Document each reusable component's `Props` interface and explain non-obvious prop defaults or accepted values (see `coding-standards.instructions.md`).
